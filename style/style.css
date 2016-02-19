@@ -15,8 +15,6 @@ a:hover{
     color: #FFD415;
 }
 
-
-
 /*模块site*/
 .site {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -96,6 +94,7 @@ a:hover{
     
            transition: all 0.2s ease-in-out;
     -webkit-transform: all 0.2s ease-in-out;
+    -webkit-filter: blur(3px);
 }
 
 .site:hover > .icon{
@@ -106,6 +105,8 @@ a:hover{
 .site:hover > .front{
     transform: rotateY(90deg);
     opacity: 0;
+    
+    -webkit-filter: blur(3px);
 
             transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -118,6 +119,7 @@ a:hover{
     transform: rotateY(0deg);
     opacity: 1;
     transition: all 0.2s ease-in-out;
+    -webkit-filter: blur(0px);
 }
 
 /*模块分类项*/
