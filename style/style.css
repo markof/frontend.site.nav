@@ -24,12 +24,12 @@ a:hover{
     padding-right: 20px;
     margin: 10px 0px;
     width: 250px;
-    /*overflow: hidden;*/
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-    	    perspective: 600;
-    -webkit-perspective: 600;
     
+    	    perspective: 600px;
+       -moz-perspective: 600px;
+    -webkit-perspective: 600px;   
 }
 
 .site > .icon {
@@ -90,10 +90,14 @@ a:hover{
     line-height: 64px;
     
             transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     
            transition: all 0.2s ease-in-out;
     -webkit-transform: all 0.2s ease-in-out;
+    
+            filter: blur(3px);
+       -moz-filter: blur(3px);
     -webkit-filter: blur(3px);
 }
 
@@ -106,9 +110,12 @@ a:hover{
     transform: rotateY(90deg);
     opacity: 0;
     
+            filter: blur(3px);
+       -moz-filter: blur(3px);
     -webkit-filter: blur(3px);
 
             transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     
            transition: all 0.2s ease-in-out;
@@ -118,7 +125,11 @@ a:hover{
 .site:hover > .links{
     transform: rotateY(0deg);
     opacity: 1;
-    transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    
+            filter: blur(0px);
+       -moz-filter: blur(0px);
     -webkit-filter: blur(0px);
 }
 
